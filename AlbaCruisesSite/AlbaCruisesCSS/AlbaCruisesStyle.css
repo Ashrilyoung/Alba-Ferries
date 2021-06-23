@@ -1,0 +1,166 @@
+/* css file for 3square website */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+
+body {
+    background-image: url("../AlbaCruisesImages/AlbaCruisesBannerDesktop2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /****** the base font size*****/
+    font-weight: 300;
+    color: #000000;
+    position: relative;
+    top: 220px;
+    width 1190px;
+    margin: auto;
+}
+
+
+/* with the help of https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
+
+.button {
+    background-color: #0090FF;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    margin: 4px 2px;
+}
+
+
+#bodyContent {
+    width: 1185px;
+    margin: auto;
+    border: 3px solid #0000;
+    position: relative;
+}
+
+#leftBlockDiv {
+    position: relative;
+    display: inline-block;
+    width 450px;
+    float: left;
+
+    /*   from https://www.w3schools.com/css/css_padding.asp */
+}
+
+#rightBlockDiv {
+    position: relative;
+    display: inline-block;
+    width 450px;
+}
+
+#ticket{
+    width: 450px;
+    padding: 10px;
+    border: 2px solid black;
+}
+/* body  */
+
+
+/* nav */
+
+nav {
+
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0090FF;
+    font-size: 18px;
+    padding-bottom: 20px;
+    width: 1180px;
+}
+
+/* data determining the look of the navigation bar */
+
+li {
+    list-style-type:none;
+    float: left;
+}
+
+li a {
+    list-style-type:none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+}
+
+li a:hover {
+    list-style-type:none;
+    background-color: #111;
+}
+
+
+/* media query  */
+
+@media only screen and (max-width: 1024px) {
+
+
+    body {
+        background-image: url("../AlbaCruisesImages/AlbaCruisesBannerDesktop721.jpg");
+        top: 120px;
+
+    }
+
+    #bodyContent {
+        width: 721px;
+    }
+
+    nav {
+        font-size: 16px;
+        width: 721px;
+
+    }
+
+
+    #leftBlockDiv {
+        position: relative;
+        display: block;
+        float: left;
+        /*   from https://www.w3schools.com/css/css_padding.asp */
+    }
+
+    #rightBlockDiv {
+        float: left;
+        position: relative;
+        display: block;
+    }
+
+
+
+}
+
+
+
+/*  end of media query*/
+
+/* media query  */
+
+@media only screen and (max-width: 736px) {
+
+
+    body {
+        background-image: url("../AlbaCruisesImages/AlbaCruisesBannerDesktop410.jpg");
+        top: 80px;
+
+    }
+
+    #bodyContent {
+        width: 410px;
+    }
+
+    nav {
+        bottom: 20%;
+        font-size: 16px;
+        width: 410px;
+
+    }
+
+
+
+
+    /*  end of media query*/
